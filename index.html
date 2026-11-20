@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA TECH - Building Tomorrow, Today.">
+  <title>NOVA TECH | Building Tomorrow, Today</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #071426;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #18304b;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #168cff;
+    }
+
+    nav a {
+      color: #c7d6e8;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #168cff;
+    }
+
+    .hero {
+      min-height: 600px;
+      padding: 110px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 80% 30%, #123c70 0%, transparent 35%),
+        #071426;
+    }
+
+    .tag {
+      color: #31a5ff;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.1;
+      max-width: 750px;
+    }
+
+    h1 span {
+      color: #168cff;
+    }
+
+    .hero p {
+      color: #b5c6d9;
+      max-width: 550px;
+      margin: 25px 0;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #087de0;
+      color: white;
+      padding: 13px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #35a5ff;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 85px 8%;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .section-title span {
+      color: #168cff;
+    }
+
+    .intro {
+      color: #aebfd2;
+      max-width: 650px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #0d2037;
+      border: 1px solid #1b3b5e;
+      border-radius: 12px;
+      padding: 28px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #168cff;
+    }
+
+    .card h3 {
+      color: #42aaff;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #afc0d2;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #0a1b30;
+    }
+
+    .about-box {
+      border-left: 4px solid #168cff;
+      padding: 10px 25px;
+      max-width: 750px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #0d2037;
+    }
+
+    .contact p {
+      color: #b5c6d9;
+      margin: 15px 0 25px;
+    }
+
+    footer {
+      padding: 25px 8%;
+      text-align: center;
+      color: #8297ae;
+      border-top: 1px solid #18304b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 520px;
+        padding: 80px 7%;
+      }
+
+      section {
+        padding: 65px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">NOVA <span>TECH</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="tag">INNOVATION STARTS HERE</div>
+
+      <h1>
+        Building <span>Tomorrow,</span> Today.
+      </h1>
+
+      <p>
+        We are NOVA TECH.
+        Exploring technology, creating digital experiences,
+        and building solutions for a smarter future.
+      </p>
+
+      <a href="#services" class="btn">Explore Our Vision</a>
+    </div>
+
+    <section class="about" id="about">
+      <h2 class="section-title">About <span>Us</span></h2>
+
+      <div class="about-box">
+        <p class="intro">
+          NOVA TECH is a technology brand focused on
+          creativity, innovation, and digital development.
+          Our vision is to turn ideas into meaningful
+          digital experiences and grow into a global
+          technology company.
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">What We <span>Do</span></h2>
+
+      <p class="intro">
+        Our areas of focus as we build and grow.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>
+            Creating modern, responsive websites
+            and digital experiences.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>App Development</h3>
+          <p>
+            Exploring innovative mobile
+            application ideas and solutions.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>UI / UX Design</h3>
+          <p>
+            Designing simple, beautiful,
+            and user-friendly interfaces.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Digital Solutions</h3>
+          <p>
+            Turning creative ideas into
+            useful digital projects.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Let's Build <span>Something</span></h2>
+
+      <p>
+        Every great idea starts with a first step.
+        Welcome to NOVA TECH.
+      </p>
+
+      <a href="#home" class="btn">Back to Top</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 NOVA TECH. All Rights Reserved.
+    <br>
+    Building Tomorrow, Today.
+  </footer>
+
+</body>
+  </html>
+  
